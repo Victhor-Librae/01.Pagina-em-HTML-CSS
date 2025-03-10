@@ -66,7 +66,6 @@ body {
 .remember-forgot {
     display: flex;
     justify-content: space-between;
-    margin: -15px 0 15px;
 }
 /*
         margin & Padding
@@ -104,5 +103,12 @@ body {
 }
 
 .register-link {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
 
+.register-link a {
+    text-decoration: none;
+    color: #fff;
 }
