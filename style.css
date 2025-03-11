@@ -25,6 +25,7 @@ body {
     color: #fff;
     padding: 30px 40px;
     box-shadow: 0 0 15px rgba(3, 3, 3, 0.2);
+    backdrop-filter: blur(50px);
 }
 
 .container h1 {
@@ -62,11 +63,6 @@ body {
     transform: translateY(-50%);
     font-size: 20px;
 }
-
-.remember-forgot {
-    display: flex;
-    justify-content: space-between;
-}
 /*
         margin & Padding
 
@@ -76,20 +72,26 @@ body {
         4 valores - margin: 10pz 30px 12px 33px - em cima, direita, embaixo, esquerda.
 */
 
-.remember-forgot label input {
+.remeber-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+}
+
+.remeber-forgot label {
     margin-right: 5px;
 }
 
-.remember-forgot a {
+.remeber-forgot a {
     text-decoration: none;
     color: #fff;
 }
 
-.remember-forgot a:hover {
+.remeber-forgot a:hover {
     text-decoration: underline;
 }
 
-.login {
+.Login {
     width: 100%;
     height: 50px;
     background-color: #fff;
@@ -98,8 +100,16 @@ body {
     cursor: pointer;
     font-size: 16px;
     color: #333;
-    font-weight: 600;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 600;
+    box-shadow: 0 0 10px rgba(3, 3, 3, 0.1);
+    margin-top: 20px;
+}
+
+.Login:hover {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    color: #fff;
+    transition: 0.5s;
 }
 
 .register-link {
@@ -111,4 +121,9 @@ body {
 .register-link a {
     text-decoration: none;
     color: #fff;
+    font-weight: 600;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
 }
